@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AthHintView">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="162"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pop-GY-o2l">
+                    <rect key="frame" x="94" y="52" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.76470588240000004" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="bQ4-2A-p2L"/>
+                        <constraint firstAttribute="height" constant="50" id="bSX-Bn-suJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报名成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7M-ZH-mhI">
+                    <rect key="frame" x="10" y="7" width="218" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="226-ze-1aa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2L-GF-Shk">
+                    <rect key="frame" x="0.0" y="36" width="238" height="1"/>
+                    <color key="backgroundColor" white="0.89683702256944442" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="b0G-sA-l5f"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wt-vd-yLV" customClass="AthButton">
+                    <rect key="frame" x="59" y="121" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.77655060279999999" green="0.73469163839999996" blue="0.37996063530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="2Jy-45-KVE"/>
+                        <constraint firstAttribute="height" constant="30" id="Im1-92-MxW"/>
+                    </constraints>
+                    <state key="normal" title="查看课程"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="connerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7wt-vd-yLV" firstAttribute="top" secondItem="pop-GY-o2l" secondAttribute="bottom" constant="19" id="1VV-IE-sTk"/>
+                <constraint firstItem="pop-GY-o2l" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1cY-hv-gCa"/>
+                <constraint firstItem="f7M-ZH-mhI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="1ts-LO-xwb"/>
+                <constraint firstItem="a2L-GF-Shk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IBY-VG-7ET"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f7M-ZH-mhI" secondAttribute="trailing" constant="10" id="JUa-hh-HIp"/>
+                <constraint firstItem="f7M-ZH-mhI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="LZV-up-uPd"/>
+                <constraint firstItem="pop-GY-o2l" firstAttribute="top" secondItem="a2L-GF-Shk" secondAttribute="bottom" constant="15" id="MAc-O3-xiB"/>
+                <constraint firstItem="a2L-GF-Shk" firstAttribute="top" secondItem="f7M-ZH-mhI" secondAttribute="bottom" constant="8" id="Zrp-CM-u5S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a2L-GF-Shk" secondAttribute="trailing" id="fgz-By-OMd"/>
+                <constraint firstItem="7wt-vd-yLV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="huj-yb-R2c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="actionBtn" destination="7wt-vd-yLV" id="bfH-XG-zVQ"/>
+                <outlet property="statusImgh" destination="pop-GY-o2l" id="KiC-bG-Sgs"/>
+                <outlet property="title" destination="f7M-ZH-mhI" id="IBw-DX-NoU"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="-199"/>
+        </view>
+    </objects>
+</document>
